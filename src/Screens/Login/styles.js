@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import { moderateScale, moderateVerticalScale, scale, verticalScale } from 'react-native-size-matters';
 
 export default StyleSheet.create({
   ButtonStyle: {
-    width: 100,
-    height: 50,
+    width: moderateScale(100),
+    height: verticalScale(40),
   },
   iconestyle: {
     width: 40,
@@ -17,18 +18,18 @@ export default StyleSheet.create({
   },
 
   TextStyle: {
-    fontSize: 26,
+    fontSize: scale(26),
     fontWeight: 'bold',
     color: 'blcak',
-    padding: 10,
+    padding: moderateScale(10),
   },
   TextInputStyle: {},
   RegistorButtonStyle: {
     backgroundColor: 'rgb(230,230,250)',
-    marginTop: 30,
+    marginTop: moderateVerticalScale(30),
     borderWidth: 1,
     borderRadius: 8,
-    width: 200,
+    width: moderateScale(200),
     alignItems: 'center',
   },
 });

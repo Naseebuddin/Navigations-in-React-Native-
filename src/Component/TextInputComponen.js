@@ -1,4 +1,4 @@
-import react from 'react';
+import react, { useState } from 'react';
 import {
   Text,
   TouchableOpacity,
@@ -12,7 +12,10 @@ export default function TextComponen({
   marginTopInPut = '',
   textType = '',
   keyBoardType = '',
-}) {
+  getTextInput='',
+})
+{
+  
   return (
     <View style={{}}>
       <TextInput
@@ -22,6 +25,7 @@ export default function TextComponen({
         secureTextEntry={textType}
         keyboardType={keyBoardType}
         maxLength={20}
+        onChangeText={getTextInput}
       />
     </View>
   );
