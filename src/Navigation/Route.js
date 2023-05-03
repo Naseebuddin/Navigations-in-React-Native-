@@ -12,10 +12,12 @@ export default function Route() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={navigationStrings.LOGIN} screenOptions={{headerShown: false}}>
-        <Stack.Screen name={navigationStrings.MAIN_SCREEN} component={MainScreen} />
-        <Stack.Screen name={navigationStrings.HOME} component={Home} />
-        <Stack.Screen name={navigationStrings.LOGIN} component={Login} />
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name={navigationStrings.MAIN_SCREEN} component={MainScreen} />
+      <Stack.Screen name={navigationStrings.LOGIN} component={Login} />
+      <Stack.Screen name={navigationStrings.HOME} component={Home} />
+        
+       
         <Stack.Screen name={navigationStrings.LOGIN_SUCESS}component={LoginSuccess} />
       </Stack.Navigator>
     </NavigationContainer>

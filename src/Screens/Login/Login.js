@@ -7,12 +7,9 @@ import en from '../../contants/lang/en';
 import imagePath from '../../contants/imagePath';
 import strings from '../../contants/lang';
 import { scale, moderateVerticalScale, moderateScale } from 'react-native-size-matters';
-
-
 export default function Login({navigation}) {
   const [inputEmail, setInputEmail] = useState('');
   const [inputPassword, setinputPassword] = useState('');
-
   const goToScreen = screeName => {
 
     let sendingData = {

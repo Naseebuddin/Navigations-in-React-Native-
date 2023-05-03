@@ -14,9 +14,7 @@ export default function Home({navigation}) {
 
   function containEmail(str) {
     return /\S+@\S+\.\S+/
-    
   
-    
   }
 
   function checkTextInput() {
@@ -38,8 +36,6 @@ export default function Home({navigation}) {
         alert('Emial only Enter')
         return;
       }
-    
-
     alert('Success Registor' );
   }
   return (

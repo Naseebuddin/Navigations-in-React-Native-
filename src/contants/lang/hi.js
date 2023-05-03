@@ -4,4 +4,5 @@ export default {
     SIGNUP:"साइन अप करें",
     ENTER_YOUR_EMAIL:"अपना ईमेल दर्ज करें",
     ENTER_YOUR_PASSWORD:"अपना पासवर्ड भरें",   
+    CHANGE_LANGUAGE:"Change Language",
     }
